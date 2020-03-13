@@ -1,0 +1,48 @@
+package Arraydemo;
+
+public class Arraydemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+int subjects[];
+
+String studentNames[]=new String[2];
+//define single dimensional array
+String computer_languages[]= {"C","C++","Java"};
+String trainerNames[]={"Sivaram","Sanjay","Vidyasagar"};
+System.out.println("Trainers:");
+//display trainer names for each loop
+for(String trainerName : trainerNames)
+{
+	System.out.println(trainerName);
+}
+
+//declare two dimensional array
+int student_marks[][];
+
+//define two dimensional array
+int StudentMarks[][]=new int[2][3];
+
+//declare three dimensional array
+int marks[][][];
+
+//define three dimensional array
+int inter_marks[][][]={{{45,52,70},{44,45,73},{78,85,51}},{{22,55,77},{33,77,66},{99,88,66}}};
+System.out.println("Marks:");
+for(int i=0;i<2;i++)
+{
+	System.out.println("Year:" +(i+1));
+	for(int j=0;j<3;j++)
+	{
+	
+		System.out.println("Student no:"+(j+1));
+	    for (int k=0;k<3;k++)
+		{
+			System.out.println(computer_languages[k]+" Marks:");
+			System.out.println(inter_marks[i][j][k]);
+		}
+	}
+}
+	}
+
+}
